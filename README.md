@@ -16,4 +16,4 @@ How does artificial intelligence work?
 scala run .
 ```
 
-* Slides are created in the `target` dir in file `slides.pdf`
+* Slides are created in dir `target`
