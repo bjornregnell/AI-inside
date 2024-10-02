@@ -6,7 +6,7 @@ How does artificial intelligence work?
 
 ## How to build slides
 
-* Install Scala >3.5.0 from here: https://www.scala-lang.org/download/
+* Install latest Scala from here: https://www.scala-lang.org/download/
 
 * Install texlive from here: https://www.tug.org/texlive/
 
