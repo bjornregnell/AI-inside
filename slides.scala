@@ -46,9 +46,10 @@ def slides = document("Hur funkar AI?", author = "Björn Regnell"):
         p("implementeras ofta med hjälp av **neurala nätverk**")
         p("Exempel: stora språkmodeller så som ChatGPT")
     p("https://sv.wikipedia.org/wiki/Artificiell_intelligens")
+    p("https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence")
 
   frame("Vårt uppdrag"):
-    p("Bygg en AI i form av ett neuralt nätverk som kan")
+    p("Bygg en liten AI som kan")
     itemize: 
       p("avgöra om en person är en **man eller kvinna**")
       p("baserat på data om *längd och vikt*")
@@ -84,18 +85,23 @@ def slides = document("Hur funkar AI?", author = "Björn Regnell"):
     p("Ett Scala-program med modellen och träningen på ca 200 rader")
     itemize:
       p("https://github.com/bjornregnell/scai")
-      p("Kör koden i din webbläsare här: https://scastie.scala-lang.org/UN0hBkX2RMeHsle1DYLw0Q")
+      p("Installera Scala och kör på din egen dator: https://www.scala-lang.org/download/")
+      p("Kör koden i din webbläsare här: https://scastie.scala-lang.org/AMRk3JkJQuaFAij6uJ4InQ")
+      p("En prototyp som visualiserar nätverket: https://github.com/Eryndir/vscAi")
 
   frame("Vad skiljer vårt simpla nätverk från ChatGPT?"):
     itemize:
       p("Vårt nätverk")
       itemize:
         p("6 neuroner, 20 parametrar, tränad på 4 datapunkter")
-        p("tränad på en enda vanlig knädator")
+        p("tränad på en vanlig knädator")
       p("ChatGPT 3.5")
       itemize:
-        p(s"175 miljarder parametrar, tränad på **jättemycket** data $nl (ca 300 miljarder ord och ca 10,000 specialdatorer)")
+        p(s"Ett nätverk med 175 miljarder parametrar")
+        p(s"Tränad på **jättemycket** data (ca 300 miljarder ord)")
+        p(s"På **jättemånga jättesnabba jättedyra** datorer (ca 10 000)")
         p("Baserad på en **språkmodell** som tar ord som indata och ger troligaste efterföljande ord som utdata.")
+        p("En mer avancerad  träningsalgoritm i flera steg")
       p("Vad betyder GPT?")
       itemize:
         p("**Generative**: Genererar ny utdata medan den tar hänsyn till ett existerande sammanhang.")
