@@ -1,14 +1,18 @@
 # AI inside
 
-How does artificial intelligence work? 
+How does artificial intelligence actually work? This talk by Björn Regnell expalains how a really simple AI based on machine learning works under the hood using simple, readable Scala code. 
 
-* [Slides](https://github.com/bjornregnell/AI-inside/releases) from a talk by Björn Regnell explaining machine learning using simple, readable Scala code.
+* See [slides here](https://github.com/bjornregnell/AI-inside/releases)  
 
-## How to build slides
+* Browse the code here: https://github.com/bjornregnell/scai
+
+* Run the code in your browser here: https://scastie.scala-lang.org/AMRk3JkJQuaFAij6uJ4InQ
+
+## How to build the slides
 
 * Install latest Scala from here: https://www.scala-lang.org/download/
 
-* Install texlive from here: https://www.tug.org/texlive/
+* Install texlive with the full set of packages from here: https://www.tug.org/texlive/
 
 * Run this command in terminal:
 
