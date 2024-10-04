@@ -128,11 +128,11 @@ def slides = document("Hur funkar AI?", author = "Björn Regnell"):
       p("Svårt genomskåda hur nätverket fungerar: *explainability*.")
       p("Om AI tränas på mänskligt beteende kan det bli enklare att **manipulera** oss.")
 
-  frame("Slutsatser"):
-    itemize:
-      p("Den som **lär sig programmera** kan förstå och skapa AI.")
-      p("Vi behöver **demokratisera** tillgången till AI.")
-      p("AI behöver **regleras** för att skydda oss från manipulation.")
+  // frame("Slutsatser"):
+  //   itemize:
+  //     p("Den som **lär sig programmera** kan förstå och skapa AI.")
+  //     p("Vi behöver **demokratisera** tillgången till AI.")
+  //     p("AI behöver **regleras** för att skydda oss från manipulation.")
 
   frame("Tack!"):
     textSize(10,10) 
