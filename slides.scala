@@ -229,7 +229,7 @@ def slidesEnglish = document("How does AI work?", author = "Björn Regnell"):
         p("A more advanced training algorithm in multiple steps.")
         p(s"A network with more than $$10^{12}$$ parameters (1000 billion).")
         p(s"Trained on **enormous amounts** of data (secret, at least $$10^{13}$$ words)")
-        p(s"On **enormously many enormously fast enormously expensive** computers (approx. 100,000 GPUs, at least 200 GWh).")
+        p(s"On ** enormously fast and expensive** computers (approx. 100,000 GPUs, at least 200 GWh).")
       p("What does GPT stand for?")
       itemize:
         p("**Generative**: Generates new output while taking an existing context into account.")
