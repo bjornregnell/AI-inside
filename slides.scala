@@ -11,7 +11,6 @@ def nl = "~\\\\{}"
 
 def wikipediaAI_sv = "https://sv.wikipedia.org/wiki/Artificiell_intelligens"
 def wikipediaAI_en = "https://en.wikipedia.org/wiki/Artificial_intelligence"
-def wikipediaSAI_en = "https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence"
 def bjornImgPath = "../img/br.jpg"
 
 @main def run = 
@@ -53,7 +52,6 @@ def slidesSwedish = document("Hur funkar AI?", author = "Björn Regnell"):
         p("implementeras ofta med hjälp av **neurala nätverk**")
         p("Exempel: stora språkmodeller så som ChatGPT")
     p(wikipediaAI_sv)
-    p(wikipediaSAI_en)
 
   frame("Vårt uppdrag"):
     p("Bygg en liten AI som kan")
@@ -176,7 +174,6 @@ def slidesEnglish = document("How does AI work?", author = "Björn Regnell"):
         p("often implemented using **neural networks**")
         p("Examples: large language models such as ChatGPT")
     p(wikipediaAI_en)
-    p(wikipediaSAI_en)
 
   frame("Our mission"):
     p("Build a small AI that can")
