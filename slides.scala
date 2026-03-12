@@ -119,8 +119,8 @@ def slidesSwedish = document("Hur funkar AI?", author = "Björn Regnell"):
     image(file = "../img/berzelius", width = 1.0)
 
   frame("AI-forskare har förfinat träningen i många steg"):
-    p("Bild från OpenAI om träningsprocessen för ChatGPT:")
     image(file = "../img/chatgpt-steps", width = 1.05)
+    p("Bild från OpenAI om träningsprocessen för ChatGPT:")
 
   frame("Några problem med dagens maskininlärning"):
     p("Även om den *verkar* smart så *förstår* den inget!")
@@ -241,8 +241,8 @@ def slidesEnglish = document("How does AI work?", author = "Björn Regnell"):
     image(file = "../img/berzelius", width = 1.0)
 
   frame("AI researchers have refined the training in many steps"):
-    p("Image from OpenAI on the training process fro ChatGPT:")
     image(file = "../img/chatgpt-steps", width = 1.05)
+    p("Image from OpenAI on the training process fro ChatGPT:")
 
   frame("Some problems with today's machine learning"):
     p("Even though it *seems* smart, it *understands* nothing!")
