@@ -10,6 +10,7 @@ def and = "\\&"
 def nl = "~\\\\{}"
 
 def wikipediaAI_sv = "https://sv.wikipedia.org/wiki/Artificiell_intelligens"
+def wikipediaAI_en = "https://en.wikipedia.org/wiki/Artificial_intelligence"
 def wikipediaSAI_en = "https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence"
 def bjornImgPath = "../img/br.jpg"
 
@@ -143,10 +144,10 @@ def slidesEnglish = document("How does AI work?", author = "Björn Regnell"):
   frame("Who am I?"):
     image(file = bjornImgPath, width = 0.2)
     itemize:
-      p("Björn Regnell, professor in software systems")
+      p("Björn Regnell, professor in Software Engineering")
       p("Department of Computer Science, LTH, Lund University https://cs.lth.se/bjorn-regnell/")
-      p("Research: requirements engineering, software quality")
-      p(s"Teaching: programming, requirements engineering")
+      p("Research: Requirements Engineering, Software Quality")
+      p(s"Teaching: Programming, Requirements Engineering")
       p("Member of the committee for the Scala programming language: https://docs.scala-lang.org/sips/process-specification.html#the-sip-committee")
 
   frame("How is artificial intelligence (AI) usually explained?"):
@@ -173,7 +174,7 @@ def slidesEnglish = document("How does AI work?", author = "Björn Regnell"):
         p("behavior becomes partially random")
         p("often implemented using **neural networks**")
         p("Examples: large language models such as ChatGPT")
-    p("https://en.wikipedia.org/wiki/Artificial_intelligence")
+    p(wikipediaAI_en)
     p(wikipediaSAI_en)
 
   frame("Our mission"):
