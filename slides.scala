@@ -12,6 +12,7 @@ def nl = "~\\\\{}"
 def wikipediaAI_sv = "https://sv.wikipedia.org/wiki/Artificiell_intelligens"
 def wikipediaAI_en = "https://en.wikipedia.org/wiki/Artificial_intelligence"
 def bjornImgPath = "../img/br.jpg"
+def runScalaCodeOnline = "https://scastie.scala-lang.org/HF8a4GJMQiaLRyx712KQpg"
 
 @main def run = 
   slidesSwedish.toPdf(out = "ai-inside-bjorn-regnell-sv")
@@ -91,7 +92,7 @@ def slidesSwedish = document("Hur funkar AI?", author = "Björn Regnell"):
     itemize:
       p("https://github.com/bjornregnell/scai")
       p("Installera Scala och kör på din egen dator: https://www.scala-lang.org/download/")
-      p("Kör koden i din webbläsare här: https://scastie.scala-lang.org/AMRk3JkJQuaFAij6uJ4InQ")
+      p(s"Kör koden i din webbläsare här: $runScalaCodeOnline")
       p("En prototyp som visualiserar nätverket: https://github.com/Eryndir/vscAi")
 
   frame("Vad skiljer vårt simpla nätverk från ChatGPT?"):
@@ -212,7 +213,7 @@ def slidesEnglish = document("How does AI work?", author = "Björn Regnell"):
     itemize:
       p("https://github.com/bjornregnell/scai")
       p("Install Scala and run on your own computer: https://www.scala-lang.org/download/")
-      p("Run the code in your browser here: https://scastie.scala-lang.org/AMRk3JkJQuaFAij6uJ4InQ")
+      p(s"Run the code in your browser here: $runScalaCodeOnline")
       p("A prototype that visualizes the network: https://github.com/Eryndir/vscAi")
 
   frame("What distinguishes our simple network from ChatGPT?"):
