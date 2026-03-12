@@ -119,6 +119,7 @@ def slidesSwedish = document("Hur funkar AI?", author = "Björn Regnell"):
     image(file = "../img/berzelius", width = 1.0)
 
   frame("AI-forskare har förfinat träningen i många steg"):
+    p("Bild från OpenAI om träningsprocessen för ChatGPT:")
     image(file = "../img/chatgpt-steps", width = 1.05)
 
   frame("Några problem med dagens maskininlärning"):
@@ -228,18 +229,19 @@ def slidesEnglish = document("How does AI work?", author = "Björn Regnell"):
         p("Based on a **language model** that takes words as input and gives the most probable following word as output.")
         p("A more advanced training algorithm in multiple steps.")
         p(s"A network with more than $$10^{12}$$ parameters (1000 billion).")
-        p(s"Trained on **enormous amounts** of data (secret, at least $$10^{13}$$ words)")
-        p(s"On ** enormously fast and expensive** computers (approx. 100,000 GPUs, at least 200 GWh).")
+        p(s"Trained on **BIG** of data (secret, > $$10^{13}$$ words)")
+        p(s"On ** enormously fast and expensive** computers (approx. 100,000 GPUs, > 200 GWh).")
       p("What does GPT stand for?")
       itemize:
         p("**Generative**: Generates new output while taking an existing context into account.")
         p("**Pre-trained**: Has been pre-trained on enormous amounts of text, incl. all of Wikipedia, and the publicly available internet.")
-        p("**Transformer**: Can handle sequences of words, evaluate connections between words and determine which words are most important.")
+        p("**Transformer**: Can handle words, assess word connections, and determine most important words.")
 
   frame("No cheap computers..."):
     image(file = "../img/berzelius", width = 1.0)
 
   frame("AI researchers have refined the training in many steps"):
+    p("Image from OpenAI on the training process fro ChatGPT:")
     image(file = "../img/chatgpt-steps", width = 1.05)
 
   frame("Some problems with today's machine learning"):
