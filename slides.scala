@@ -248,7 +248,7 @@ def slidesEnglish = document("How does AI work?", author = "Björn Regnell"):
     p("Even though it *seems* smart, it *understands* nothing!")
     p("(Depending on what we mean by *understands*...)")
     itemize:
-      p("**Bias**: biased AI.")
+      p("**Bias**: prejudiced AI.")
       p("**Overfitting**: cannot generalize beyond training data.")
       p("It is not easy to make large models good.")
       p("Can suddenly start ''**hallucinating**'' -- making things up.")
