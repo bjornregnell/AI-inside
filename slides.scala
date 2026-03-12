@@ -1,7 +1,7 @@
 //> using dep "taggy:taggy:1.0.1,url=https://github.com/bjornregnell/taggy/releases/download/v1.0.1/taggy_3-1.0.1.jar"
-//> using scala "3.5.1"
+//> using scala 3.8
 
-//  run this command in terminal to create slides in target/out.pdf 
+//  run this command in terminal to create slides in target 
 //  scala-cli run .
 
 import taggy.*
@@ -9,7 +9,8 @@ import taggy.*
 def and = "\\&"
 def nl = "~\\\\{}"
 
-@main def run = slides.toPdf(out = "ai-inside-bjorn-regnell")
+@main def run = 
+  slides.toPdf(out = "ai-inside-bjorn-regnell")
 
 def slides = document("Hur funkar AI?", author = "Björn Regnell"):
   frame("Vem är jag?"):
@@ -19,7 +20,7 @@ def slides = document("Hur funkar AI?", author = "Björn Regnell"):
       p("Institutionen för datavetenskap, LTH, Lunds universitet https://cs.lth.se/bjorn-regnell/")
       p("Forskning: kravhantering, programvarukvalitet")
       p(s"Undervisning: programmering, kravhantering")
-      p("Medlem i kommittén för programmeringsspråket Scala: https://www.scala-lang.org/community/#gov-sip")
+      p("Medlem i kommittén för programmeringsspråket Scala: https://docs.scala-lang.org/sips/process-specification.html#the-sip-committee")
 
   frame("Hur brukar man förklara artificiell intelligens (AI)?"):
     p("Ofta beskrivs AI genom dess smarta egenskaper")
@@ -95,18 +96,18 @@ def slides = document("Hur funkar AI?", author = "Björn Regnell"):
       itemize:
         p("6 neuroner, 20 parametrar, tränad på 4 datapunkter")
         p("tränad på en vanlig knädator")
-      p("ChatGPT 3.5")
+      p("ChatGPT 5")
       itemize:
-        p(s"Ett nätverk med 175 miljarder parametrar")
-        p(s"Tränad på **jättemycket** data (ca 300 miljarder ord)")
-        p(s"På **jättemånga jättesnabba jättedyra** datorer (ca 10 000)")
-        p("Baserad på en **språkmodell** som tar ord som indata och ger troligaste efterföljande ord som utdata.")
-        p("En mer avancerad  träningsalgoritm i flera steg")
+        p("Baserad på en **språkmodell** som tar ord som indata och ger mest sannolika efterföljande ord som utdata.")
+        p("En mer avancerad  träningsalgoritm i flera steg.")
+        p(s"Ett nätverk med mer än $$10^{12}$$ parametrar (1000 miljarder).")
+        p(s"Tränad på **jättemycket** data (hemligt, minst $$10^{13}$$ ord)")
+        p(s"På **jättemånga jättesnabba jättedyra** datorer (ca 100 000 GPU:er, minst 200 GWh).")
       p("Vad betyder GPT?")
       itemize:
         p("**Generative**: Genererar ny utdata medan den tar hänsyn till ett existerande sammanhang.")
         p("**Pre-trained**: Har i förväg tränats på jättestora textmängder, inkl. hela Wikipedia, och allmänt tillgängliga internet.")
-        p("**Transformer**: Kan hantera sekvenser av ord, värdera kopplingar mellan ord och avgöra vilka ord som är viktigast")
+        p("**Transformer**: Kan hantera sekvenser av ord, värdera kopplingar mellan ord och avgöra vilka ord som är viktigast.")
 
   frame("Inga billiga datorer..."):
     image(file = "../img/berzelius", width = 1.0)
@@ -138,4 +139,4 @@ def slides = document("Hur funkar AI?", author = "Björn Regnell"):
     textSize(10,10) 
     itemize:
       p(s"Denna presentation: https://github.com/bjornregnell/AI-inside/")
-      p(s"En längre presentation som också diskuterar konsekvenser för samhälle och högre utbildning: https://github.com/bjornregnell/AI-taking-over")
+      // TODO: update this old presentation: p(s"En längre presentation som också diskuterar konsekvenser för samhälle och högre utbildning: https://github.com/bjornregnell/AI-taking-over")
