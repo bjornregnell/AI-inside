@@ -1,7 +1,7 @@
 //> using dep "taggy:taggy:1.0.1,url=https://github.com/bjornregnell/taggy/releases/download/v1.0.1/taggy_3-1.0.1.jar"
 //> using scala 3.8
 
-//  run this command in terminal to create slides in target 
+//  run this command in terminal to create slidesSwedish in target 
 //  scala-cli run .
 
 import taggy.*
@@ -9,12 +9,16 @@ import taggy.*
 def and = "\\&"
 def nl = "~\\\\{}"
 
-@main def run = 
-  slides.toPdf(out = "ai-inside-bjorn-regnell")
+def wikipediaAI_sv = "https://sv.wikipedia.org/wiki/Artificiell_intelligens"
+def wikipediaSAI_sv = "https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence"
+def bjornImgPath = "../img/br.jpg"
 
-def slides = document("Hur funkar AI?", author = "Björn Regnell"):
+@main def run = 
+  slidesSwedish.toPdf(out = "ai-inside-bjorn-regnell-sv")
+
+def slidesSwedish = document("Hur funkar AI?", author = "Björn Regnell"):
   frame("Vem är jag?"):
-    image(file = "../img/br.jpg", width = 0.2)
+    image(file = bjornImgPath, width = 0.2)
     itemize:
       p("Björn Regnell, professor i programvarusystem")
       p("Institutionen för datavetenskap, LTH, Lunds universitet https://cs.lth.se/bjorn-regnell/")
@@ -46,8 +50,8 @@ def slides = document("Hur funkar AI?", author = "Björn Regnell"):
         p("beteende blir delvis slumpartat")
         p("implementeras ofta med hjälp av **neurala nätverk**")
         p("Exempel: stora språkmodeller så som ChatGPT")
-    p("https://sv.wikipedia.org/wiki/Artificiell_intelligens")
-    p("https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence")
+    p(wikipediaAI_sv)
+    p(wikipediaSAI_sv)
 
   frame("Vårt uppdrag"):
     p("Bygg en liten AI som kan")
@@ -129,14 +133,10 @@ def slides = document("Hur funkar AI?", author = "Björn Regnell"):
       p("Svårt genomskåda hur nätverket fungerar: *explainability*.")
       p("Om AI tränas på mänskligt beteende kan det bli enklare att **manipulera** oss.")
 
-  // frame("Slutsatser"):
-  //   itemize:
-  //     p("Den som **lär sig programmera** kan förstå och skapa AI.")
-  //     p("Vi behöver **demokratisera** tillgången till AI.")
-  //     p("AI behöver **regleras** för att skydda oss från manipulation.")
-
   frame("Tack!"):
     textSize(10,10) 
     itemize:
       p(s"Denna presentation: https://github.com/bjornregnell/AI-inside/")
-      // TODO: update this old presentation: p(s"En längre presentation som också diskuterar konsekvenser för samhälle och högre utbildning: https://github.com/bjornregnell/AI-taking-over")
+
+def slidesEnglish = 
+  ???
